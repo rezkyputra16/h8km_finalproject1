@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Lora';
+  font-family: "Lora";
   src: url("./assets/fonts/Lora.ttf");
 }
 
 @font-face {
-  font-family: 'Lora';
+  font-family: "Lora";
   font-weight: bold;
   src: url("./assets/fonts/Lora-Bold.ttf");
 }
-
 
 body {
   @apply font-serif min-h-screen w-auto overflow-x-hidden m-0 bg-base-100 scrollbar;
@@ -32,26 +31,24 @@ body {
   }
 }
 
-
 .main-content {
-  @apply grid lg:grid-cols-2 sm:grid-cols-1 gap-x-12 gap-y-10 mx-44 my-6 justify-center px-20 static;
+  @apply grid lg:grid-cols-3 sm:grid-cols-2 gap-x-12 gap-y-10 lg:mx-24 m-0 my-6 justify-center px-6 lg:px-12 static;
 }
 
 .tabs-content {
-  @apply tabs justify-center mt-4 gap-x-2 mx-auto static;
+  @apply text-sm lg:text-base tabs justify-center mt-4 gap-x-2 mx-auto static;
 }
 
-.tab-active{
+.tab-active {
   @apply inline-block py-1 px-5 text-base-100 bg-primary border border-primary rounded-full;
 }
 
-.tab-inactive{
+.tab-inactive {
   @apply inline-block py-1 px-5 border border-primary rounded-full text-primary;
 }
 
-
 .navbar {
-  @apply w-screen bg-base-100 border border-y-primary flex align-middle mt-px px-16 justify-between;
+  @apply w-screen bg-base-100 border border-y-primary flex flex-wrap align-middle mt-px px-6 lg:px-16 justify-between;
 }
 
 .side-bar {
@@ -62,33 +59,38 @@ hr {
   @apply h-px w-full border-t border-primary mt-4 mb-1;
 }
 
-
 .cardItem {
   @apply grid pt-8 pb-2 px-4 content-between bg-transparent rounded-md border border-primary w-fit h-auto;
 }
 
 article {
   @apply rounded-lg shadow-primary;
-  box-shadow: .6rem .6rem;
-  transition: all .14s ease-out;
+  box-shadow: 0.6rem 0.6rem;
+  transition: all 0.14s ease-out;
 }
 
 article:hover {
   @apply shadow-primary;
-  transform: translate(-.5rem, -.5rem);
-  box-shadow: .35rem .35rem;
-  transition: all .14s ease-out;  
+  transform: translate(-0.5rem, -0.5rem);
+  box-shadow: 0.35rem 0.35rem;
+  transition: all 0.14s ease-out;
 }
 
-
-a{
+a {
   @apply text-primary decoration-inherit;
 }
 
-a, a::before, a::after, a:hover, a:focus, a:active, a:visited, a:link, a::marker {
+a,
+a::before,
+a::after,
+a:hover,
+a:focus,
+a:active,
+a:visited,
+a:link,
+a::marker {
   text-decoration: none;
 }
-
 
 button {
   @apply rounded-full p-3 text-primary;
