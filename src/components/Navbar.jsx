@@ -28,15 +28,15 @@ export default () => {
 
   return (
     <Navbar className="navbar">
-      <Link to="/" className="flex">
-        <p className="text-4xl text-primary">
+      <Link to="/" className="flex justify-center my-2 w-full sm:w-auto">
+        <p className="text-xl lg:text-2xl text-primary">
           <b>HacktivNews</b>
         </p>
       </Link>
-      <div className="flex gap-2">
+      <div className="flex gap-2 w-full sm:w-auto justify-between">
         <Form onSubmit={handleSearch}>
           <Input
-            className="w-80 h-10 rounded-full border border-primary self-center"
+            className="w-60 lg:w-80 h-10 rounded-full border border-primary self-center"
             placeholder="Search news..."
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
@@ -48,7 +48,7 @@ export default () => {
             <IoSearchOutline size={20} />
           </button>
         </Form>
-        <label className="swap swap-rotate ml-6">
+        <label className="swap swap-rotate ml-3 lg:ml-6">
           <input type="checkbox" />
           <svg
             className="swap-on fill-current w-7 "
@@ -70,8 +70,8 @@ export default () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "mx-4 p-2 rounded-full bg-base-300 border border-spacing-1 border-primary"
-              : "mx-4 p-2 rounded-full"
+              ? "w-px mx-2 lg:mx-4 p-2 rounded-full bg-base-300 border border-spacing-1 border-primary"
+              : "mx-2 lg:mx-4 p-2 rounded-full"
           }
           to="/saved"
         >
