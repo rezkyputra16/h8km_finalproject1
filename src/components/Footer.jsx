@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { AiOutlineLinkedin, AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 export default () => {
   return (
@@ -51,7 +51,7 @@ export default () => {
       </div>
     </footer>
   );
-};
+}
 
 //* Component local
 
