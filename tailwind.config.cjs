@@ -8,27 +8,29 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'serif': ['Lora', 'serif']
+      serif: ["Lora", "serif"],
     },
     extend: {},
   },
-  plugins: [require('daisyui')],
+  plugins: [require("daisyui")],
   daisyui: {
     themes: [
       {
-        'light': {
-          'primary': '#1f1f1f',
-          'primary-content': '#ffffff',
-          'base-100': '#ffffff',
-        }
+        light: {
+          primary: "#1f1f1f",
+          "primary-content": "#fff",
+          "base-100": "#ffffff",
+          secondary: "#f8fafc",
+        },
       },
       {
-        'dark': {
-          'primary': '#ffffff',
-          'primary-content': '#1f1f1f',
-          'base-100': '#1f1f1f',
-        }
-      }
-    ]
-  }
-}
+        dark: {
+          primary: "#ffffff",
+          "primary-content": "#0f172a",
+          "base-100": "#0f172a",
+          secondary: "#1e293b",
+        },
+      },
+    ],
+  },
+};

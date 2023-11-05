@@ -40,15 +40,15 @@ body {
 }
 
 .tab-active {
-  @apply inline-block py-1 px-5 text-base-100 bg-primary border border-primary rounded-full;
+  @apply inline-block py-1 px-5 text-base-100 bg-primary border  shadow-lg rounded-full;
 }
 
 .tab-inactive {
-  @apply inline-block py-1 px-5 border border-primary rounded-full text-primary;
+  @apply inline-block py-1 px-5 border shadow-lg rounded-full text-primary;
 }
 
 .navbar {
-  @apply w-screen bg-base-100 border border-y-primary flex flex-wrap align-middle mt-px px-6 lg:px-16 justify-between;
+  @apply w-screen bg-secondary shadow-lg drop-shadow-lg  flex flex-wrap align-middle mt-px px-6 lg:px-16 justify-between;
 }
 
 .side-bar {
@@ -60,7 +60,7 @@ hr {
 }
 
 .cardItem {
-  @apply grid pt-8 pb-2 px-4 content-between bg-transparent rounded-md border border-primary w-fit h-auto;
+  @apply grid pt-8 pb-2 px-4 bg-secondary content-between rounded-md w-fit h-auto;
 }
 
 article {
@@ -113,5 +113,5 @@ button {
 }
 
 .footer-content {
-  @apply footer mb-1 mt-10 border border-y-primary p-10 bg-base-100 w-screen text-primary bottom-1;
+  @apply footer mb-1 mt-10 p-10 bg-secondary w-screen text-primary bottom-1;
 }

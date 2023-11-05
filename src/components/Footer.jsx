@@ -29,29 +29,23 @@ export default () => {
           Kampus Merdeka
         </a>
       </div>
+      <div>
+        <span className="text-primary font-bold">Category</span>
+        <span>Indonesia</span>
+        <span>Programming</span>
+        <span>Covid-19</span>
+      </div>
 
       <div>
         <span className="text-primary font-bold">Contact Us</span>
-        <Contact
-          name="Rezky Putra Kurniawan"
-          linkIG=""
-        />
-        <Contact
-          name="Lastri Rehalita Panjaitan"
-          linkIG=""
-        />
-        <Contact
-          name="Ikhdan Magfuron"
-          linkIG=""
-        />
-        <Contact 
-          name="Ikhmal Bayu Pamungkas"
-          linkIG=""
-        />
+        <Contact name="Rezky Putra Kurniawan" linkIG="" />
+        <Contact name="Lastri Rehalita Panjaitan" linkIG="" />
+        <Contact name="Ikhdan Magfuron" linkIG="" />
+        <Contact name="Ikhmal Bayu Pamungkas" linkIG="" />
       </div>
     </footer>
   );
-}
+};
 
 //* Component local
 
